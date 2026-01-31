@@ -26,14 +26,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   gap: 2rem;
 }
 
-.logo-section {
-  flex: 1;
-  min-width: 250px;
-}
+
 
 .logo-text {
   font-size: 2rem;
@@ -68,6 +65,7 @@
   font-weight: 500;
   transition: color 0.3s ease, transform 0.3s ease;
   position: relative;
+  text-wrap: nowrap;
 }
 
 .nav-list a:hover {
@@ -159,6 +157,7 @@
 
 .social-links {
   display: flex;
+  flex-wrap: nowrap;
   gap: 1rem;
   align-items: center;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -187,27 +186,96 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 1140px){
+  .social-links.visible {
+    display: none;
+    background-color: yellow;
   }
 
-  .nav-list {
-    gap: 1rem;
-    flex-wrap: wrap;
+  .header-container {
+    gap: 1.5em;
+  }
+}
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 0 1.5rem;
+    gap: 1.5rem;
   }
 
   .logo-text {
+    font-size: 1.8rem;
+  }
+
+  .header-scrolled .logo-text {
     font-size: 1.5rem;
   }
 
-  .search-input {
-    width: 150px;
+  .nav-list {
+    gap: 1.5rem;
   }
 
-  .search-input:focus {
-    width: 180px;
+  .header-scrolled .nav-list a {
+    font-size: 0.9rem;
   }
+
+
+  .header-scrolled .search-input {
+    width: 160px;
+  }
+}
+
+
+
+@media (max-width: 772px) {
+  .menu-toggle {
+    display: block; /* Mostra no mobile */
+  }
+
+  .header-container {
+    padding: 0 1.5rem;
+    gap: 1rem;
+  }
+
+  /* Transforma a NAV em um menu suspenso */
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #0247AE;
+    padding: 2rem;
+    display: none; /* Esconde por padrão */
+    flex-direction: column;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  }
+
+  .nav-open {
+    display: flex; 
+    animation: slideDown 0.3s ease-out;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .social-links.hidden {
+    display: none;
+  }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }

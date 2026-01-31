@@ -28,7 +28,7 @@ export default function Footer() {
 
         <div className="footer-section">
           <h4>Redes Sociais</h4>
-          <div className="social-links">
+          <div className="social-links-footer">
             <a href="#facebook">Facebook</a>
             <a href="#instagram">Instagram</a>
             <a href="#whatsapp">WhatsApp</a>
