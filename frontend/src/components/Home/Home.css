@@ -119,6 +119,7 @@
   }
 
   .img-home-content {
-    width: 75%;
+    width: 60%;
+    bottom: 0;
   }
 }
