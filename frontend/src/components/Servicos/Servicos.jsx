@@ -3,7 +3,6 @@ import './Servicos.css';
 const Servicos = () => {
   return (
     <section className="services-section" id="servicos">
-      <div className="services-container">
         <h2 className="section-title">Nossos Serviços</h2>
 
         <div className="services-content">
@@ -32,7 +31,6 @@ const Servicos = () => {
               </div>
             </div>              
         </div>
-      </div>
     </section>
   );
 };
