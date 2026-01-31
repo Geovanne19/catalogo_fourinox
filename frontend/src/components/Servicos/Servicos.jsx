@@ -1,4 +1,5 @@
 import './Servicos.css';
+import imgCorteLaser from '../../assets/img-corte-a-laser.webp';
 
 const Servicos = () => {
   return (
@@ -9,7 +10,7 @@ const Servicos = () => {
         <div className="services-content">
             <div className="service-card-modern">
               <div className="service-image-box">
-                <img src="../src/assets/img-corte-a-laser.webp" alt="Corte a Laser" />
+                <img src={imgCorteLaser} alt="Corte a Laser" />
               </div>
               
               <div className="service-content">
