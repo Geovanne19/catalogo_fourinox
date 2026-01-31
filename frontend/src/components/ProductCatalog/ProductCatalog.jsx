@@ -13,7 +13,8 @@ export default function ProductCatalog() {
       setLoading(true)
       setError(null)
       try {
-        const res = await fetch('http://localhost:3000/produtos/')
+        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+        const res = await fetch(`${API_URL}/produtos/`);
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
         const data = await res.json()
         setProducts(data)
