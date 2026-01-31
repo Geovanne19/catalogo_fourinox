@@ -44,7 +44,7 @@
 .img-home-content {
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 50%;
   width: 40%;
   color: #fff;
   z-index: 2;
