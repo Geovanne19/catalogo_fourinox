@@ -239,7 +239,7 @@
 
 @media (max-width: 772px) {
   .menu-toggle {
-    display: block; /* Mostra no mobile */
+    display: block;
   }
 
   .header-container {

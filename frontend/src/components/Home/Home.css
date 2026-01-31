@@ -104,10 +104,6 @@
 }
 
 @media (max-width: 768px) {
-  .img-home-text {
-    font-size: 1.5rem;
-  }
-
   .img-home::before {
     content: "";
     position: absolute;
@@ -115,8 +111,26 @@
     background-image: url('../../assets/img_home_mobile.png');
   }
 
+  .img-home::before {
+    background-image: url('../../assets/img_home_mobile.png');
+  }
+
+  /* 2. Reposiciona o container de texto */
   .img-home-content {
-    width: 60%;
-    bottom: 0%;
+    top: auto;            
+    bottom: 30px;        
+    right: 20px;          
+    width: 85%;           
+    text-align: right;    
+    transform: none;      
+  }
+
+  .img-home-text {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .img-home.animate .img-home-content {
+    animation: slideUp 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
   }
 }

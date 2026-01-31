@@ -38,10 +38,9 @@
 .contact-item {
   display: flex;
   align-items: center;
-  padding: 15px 20px;
+  padding: 12px 17px;
   background-color: var(--white);
   border-radius: 16px;
-  text-decoration: none;
   box-shadow: var(--shadow-soft);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -72,7 +71,6 @@
   opacity: 1;
 }
 
-/* Ícones Reais */
 .icon-circle {
   width: 50px;
   height: 50px;
@@ -95,11 +93,13 @@
   margin: 0;
   color: var(--fourinox-blue);
   font-weight: 600;
+  font-size: 1rem;
 }
 
 .contact-text p {
   margin: 4px 0 0;
   color: var(--text-main);
+  font-size: .9rem;
 }
 
 .hours {
@@ -111,10 +111,9 @@
 
 .contact-map-wrapper {
   flex: 1.2;
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
   box-shadow: var(--shadow-soft);
-  min-height: 450px;
 }
 
 /* Responsividade (Mobile) */
