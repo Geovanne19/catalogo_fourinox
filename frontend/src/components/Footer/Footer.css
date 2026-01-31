@@ -100,7 +100,7 @@ ul.footer-links {
   .footer-container {
     grid-template-columns: 1fr; /* Uma única coluna */
     text-align: center; /* Centraliza tudo no mobile */
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
 
   .footer-section h4::after {

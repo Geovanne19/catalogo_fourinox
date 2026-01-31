@@ -52,8 +52,9 @@
 }
 
 .service-content h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #0F253B;
+  font-weight: 600;
 }
 
 .service-content p {
