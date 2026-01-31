@@ -1,0 +1,86 @@
+.service-card-modern {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  max-width: 1000px; /* Ajuste conforme seu grid */
+  margin: 20px auto;
+  border: 1px solid #eee;
+}
+
+.service-card-modern:hover {
+  box-shadow: 0 15px 45px rgba(15, 37, 59, 0.15);
+}
+
+.service-image-box {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.service-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-card-modern:hover .service-image-box img {
+  transform: scale(1.1); /* Efeito de zoom na imagem */
+}
+
+
+.service-content {
+  padding: 10px 20px 20px 20px;
+}
+
+.service-header-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.service-icon {
+  font-size: 1.5rem;
+  color: #3B82F6;
+}
+
+.service-content h3 {
+  font-size: 1.6rem;
+  color: #0F253B;
+}
+
+.service-content p {
+  color: #64748B;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.service-btn {
+  display: inline-flex; 
+  align-items: center;   
+  justify-content: center;
+  gap: 10px;             
+  background: #3B82F6;   
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-btn i {
+  display: flex;         
+  align-items: center;        
+  margin-top: 5px;       
+}
+
+.service-btn:hover {
+  background: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
