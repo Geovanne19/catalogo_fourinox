@@ -4,7 +4,7 @@
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  max-width: 1000px; /* Ajuste conforme seu grid */
+  max-width: 800px; 
   margin: 20px auto;
   border: 1px solid #eee;
 }
@@ -15,7 +15,7 @@
 
 .service-image-box {
   position: relative;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
 }
 
@@ -66,7 +66,7 @@
   background: #3B82F6;   
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 7px 15px;
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
@@ -76,11 +76,11 @@
 .service-btn i {
   display: flex;         
   align-items: center;        
-  margin-top: 5px;       
+  margin-top: 3px;       
 }
 
 .service-btn:hover {
   background: transparent;
-  border: 2px solid var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
 }

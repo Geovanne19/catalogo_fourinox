@@ -4,7 +4,7 @@
 }
 
 .about-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -18,20 +18,11 @@
   flex: 1;
 }
 
-.about-text h2 {
+.section-title h2 {
   color: #0F253B;
   font-size: 2.5rem;
   margin-bottom: 20px;
   position: relative;
-}
-
-.about-text h2::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: #3B82F6;
-  margin-top: 10px;
 }
 
 .about-text h3 {

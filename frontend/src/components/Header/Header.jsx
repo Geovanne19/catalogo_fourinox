@@ -75,7 +75,6 @@ export default function Header() {
           )}
         </form>
 
-        {/* Botão Hambúrguer */}
         <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <i className={isMenuOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
         </button>
