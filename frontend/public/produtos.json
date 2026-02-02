@@ -4,118 +4,118 @@
     "nome": "Tubos de Condução",
     "categoria": "Aço Carbono",
     "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "TUBOS-DE-CONDUÇÃO.jpg"
+    "imagem": "tubos-de-condução.jpg"
   },
   {
     "id": 2,
     "nome": "Tubos Industriais",
     "categoria": "Aço Carbono",
     "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "TUBOS-INDUSTRIAIS.jpg"
+    "imagem": "tubos-industriais.jpg"
   },
   {
     "id": 3,
     "nome": "Conexões Tubulares",
     "categoria": "Aço Carbono",
     "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "CONEXÕES-TUBULARES.jpg"
+    "imagem": "conexões-tubulares.jpg"
   },
   {
     "id": 4,
     "nome": "Conexões Galvanizadas",
     "categoria": "Aço Carbono",
     "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "CONEXÕES-GALVANIZADAS.jpg"
+    "imagem": "conexões-galvanizadas.jpg"
   },
   {
     "id": 5,
     "nome": "Válvulas",
     "categoria": "Aço Carbono",
     "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "VÁLVULAS.jpg"
+    "imagem": "válvulas.jpg"
   },
   {
     "id": 6,
     "nome": "Equipamentos de combate a incêndio",
     "categoria": "Aço Carbono",
     "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "EQUIPAMENTOS-DE-COMBATE-A-INCÊNDIO.jpg"
+    "imagem": "equipamentos-de-combate-a-incêndio.jpg"
   },
   {
     "id": 7,
     "nome": "Chapas",
     "categoria": "Aço Carbono",
     "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "CHAPAS.jpg"
+    "imagem": "chapas.jpg"
   },
   {
     "id": 8,
     "nome": "Barras/Perfis",
     "categoria": "Aço Carbono",
     "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "BARRAS/PERFIS.jpg"
+    "imagem": "barras-perfis.jpg"
   },
   {
     "id": 9,
     "nome": "Acessórios Industriais",
     "categoria": "Aço Carbono",
     "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "ACESSÓRIOS-INDUSTRIAIS.jpg"
+    "imagem": "acessórios-industriais.jpg"
   },
   {
     "id": 10,
     "nome": "Conexões Grooved",
     "categoria": "Aço Carbono",
     "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "CONEXÕES-GROOVED.jpg"
+    "imagem": "conexões-grooved.jpg"
   },
   {
     "id": 11,
     "nome": "Isolamento térmico",
     "categoria": "Aço Carbono",
     "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "ISOLAMENTO-TÉRMICO.jpg"
+    "imagem": "isolamento-térmico.jpg"
   },
   {
     "id": 12,
     "nome": "Válvulas - Aço Inox",
     "categoria": "Aço Inox",
     "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "VÁLVULAS---AÇO-INOX.jpg"
+    "imagem": "válvulas---aço-inox.jpg"
   },
   {
     "id": 13,
     "nome": "Barras e Perfis",
     "categoria": "Aço Inox",
     "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "BARRAS-E-PERFIS.jpg"
+    "imagem": "barras-e-perfis.jpg"
   },
   {
     "id": 14,
     "nome": "Acessórios para Corrimão",
     "categoria": "Aço Inox",
     "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "ACESSÓRIOS-PARA-CORRIMÃO.jpg"
+    "imagem": "acessórios-para-corrimão.jpg"
   },
   {
     "id": 15,
     "nome": "Abrasivos",
     "categoria": "Aço Inox",
     "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "ABRASIVOS.jpg"
+    "imagem": "abrasivos.jpg"
   },
   {
     "id": 16,
     "nome": "Tubos com costura e sem costura",
     "categoria": "Aço Inox",
     "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "TUBOS-COM-COSTURA-E-SEM-COSTURA.jpg"
+    "imagem": "tubos-com-costura-e-sem-costura.jpg"
   },
   {
     "id": 17,
     "nome": "Chapas/Bobinas",
     "categoria": "Aço Inox",
     "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "CHAPAS/BOBINAS.jpg"
+    "imagem": "chapas-bobinas.jpg"
   }
 ]
