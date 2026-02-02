@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './Header.css'
 
 export default function Header() {
@@ -7,6 +7,8 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [products, setProducts] = useState([])
   const [filteredProducts, setFilteredProducts] = useState([])
+  
+  const searchRef = useRef(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +16,17 @@ export default function Header() {
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setFilteredProducts([])
+        setSearchTerm('')
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
   useEffect(() => {
@@ -26,7 +39,6 @@ export default function Header() {
       .catch(err => console.error('Erro ao carregar catálogo para busca:', err))
   }, [])
 
-  // LÓGICA DE PESQUISA
   useEffect(() => {
     if (searchTerm.trim() === '') {
       setFilteredProducts([])
@@ -42,7 +54,7 @@ export default function Header() {
     <header className={`header ${isScrolled ? 'header-scrolled' : 'header-top'}`}>
       <div className="header-container">
         <div className="logo-section">
-          <h1 className="logo-text">FOURINOX</h1>
+          <img src="./logo.png" alt="Logo Fourinox" />
         </div>
 
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
@@ -55,7 +67,7 @@ export default function Header() {
           </ul>
         </nav>
 
-        <form className="search-form" onSubmit={(e) => e.preventDefault()}>
+        <form className="search-form" ref={searchRef} onSubmit={(e) => e.preventDefault()}>
           <input
             type="text"
             className="search-input"
@@ -63,6 +75,7 @@ export default function Header() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
+          
           {filteredProducts.length > 0 && (
             <div className="search-dropdown">
               {filteredProducts.map(product => (
@@ -71,10 +84,16 @@ export default function Header() {
                   className="search-item" 
                   onClick={() => {
                     setSearchTerm('') 
+                    setFilteredProducts([])
                     window.location.href = `#catalogo` 
                   }}
                 >
-                  <span>{product.nome}</span>
+                  <img 
+                    src={`/imagens-produtos/${product.imagem}`} 
+                    alt={product.nome} 
+                    className="search-item-image"
+                  />
+                  <span className="search-item-name">{product.nome}</span>
                 </div>
               ))}
             </div>
@@ -86,8 +105,8 @@ export default function Header() {
         </button>
 
         <div className={`social-links ${!isScrolled || isMenuOpen ? 'visible' : 'hidden'}`}>
-          <a href="#" className="social-link"><i className="fab fa-whatsapp"></i></a>
-          <a href="#" className="social-link"><i className="fab fa-instagram"></i></a>
+          <a href="https://wa.me/message/JX3T3UILQ4YJN1" className="social-link" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com/fourinox" className="social-link" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
         </div>
       </div>
     </header>

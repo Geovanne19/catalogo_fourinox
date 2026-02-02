@@ -1,22 +1,27 @@
+:root {
+  --accent-color: #3498db;
+  --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
 .header {
-  background: linear-gradient(135deg, #0a5fc7 0%, #0247AE 100%);
+  background: var(--primary-color);
+  padding: 0;
   color: white;
   position: sticky;
   top: 0;
   z-index: 100;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: padding 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
 }
 
 .header-top {
-  padding: 1rem 0;
+  padding: 0.7rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header-scrolled {
-  padding: 0.8rem 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, rgba(10, 95, 199, 0.98) 0%, rgba(2, 71, 174, 0.98) 100%);
-  backdrop-filter: blur(8px);
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background: var(--primary-color);
 }
 
 .header-container {
@@ -26,29 +31,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   gap: 2rem;
 }
 
+.logo-section img {
+  height: 60px;
+  transition: height 0.4s ease;
+  display: block;
+  border-radius: 10%;
+}
 
+.header-scrolled .logo-section img {
+  height: 45px;
+}
 
 .logo-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  margin: 0;
-  letter-spacing: 2px;
-  color: #ecf0f1;
-  transition: font-size 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: font-size 0.4s ease;
 }
 
 .header-scrolled .logo-text {
-  font-size: 1.6rem;
-}
-
-.tagline {
-  font-size: 0.9rem;
-  margin: 0.5rem 0 0 0;
-  color: #bdc3c7;
+  font-size: 1.5rem;
 }
 
 .nav-list {
@@ -63,14 +68,50 @@
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease, font-size 0.4s ease;
   position: relative;
-  text-wrap: nowrap;
+  white-space: nowrap;
+  position: relative;
+  padding: 5px 0;
 }
 
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, font-size 0.4s ease;
+  position: relative; /* Necessário para o posicionamento da linha */
+  white-space: nowrap;
+  padding: 5px 0;
+}
+
+/* Cria a linha invisível embaixo do link */
+.nav-list a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-radius: 5px;
+}
+
+/* Animação ao passar o mouse */
 .nav-list a:hover {
-  color: #3498db;
-  transform: translateY(-2px);
+  color: var(--accent-color);
+}
+
+.nav-list a:hover::after {
+  transform: scaleX(1); /* Expande a linha para 100% */
+}
+
+/* Ajuste sutil para o estado scrolled */
+.header-scrolled .nav-list a::after {
+  height: 1px; /* Linha mais fina quando o header encolhe */
 }
 
 .header-scrolled .nav-list a {
@@ -85,7 +126,7 @@
 }
 
 .search-input {
-  padding: 0.6rem 1rem;
+  padding: 0.5rem 1rem;
   border: none;
   border-radius: 4px;
   font-size: 0.9rem;
@@ -96,36 +137,51 @@
 .search-input:focus {
   outline: none;
   width: 250px;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.search-item-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.search-item-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .search-dropdown {
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 0;
   right: 0;
   background: white;
-  border: 1px solid #ddd;
-  max-height: 200px;
+  border-radius: 4px;
+  max-height: 250px;
   overflow-y: auto;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .search-item {
-  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.3rem 0.5rem;
   cursor: pointer;
   border-bottom: 1px solid #eee;
   transition: background-color 0.2s ease;
-  color: black;
+  color: #333;
 }
 
 .search-item:hover {
-  background-color: #f5f5f5;
-}
-
-.search-item:last-child {
-  border-bottom: none;
+  background-color: #f0f7ff;
 }
 
 .header-scrolled .search-input {
@@ -133,56 +189,38 @@
   width: 180px;
 }
 
-.header-scrolled .search-input:focus {
-  width: 220px;
-}
-
-.search-input::placeholder {
-  color: #bdc3c7;
-}
-
-.search-btn {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding: 0.5rem;
-  transition: transform 0.2s ease;
-}
-
-.search-btn:hover {
-  transform: scale(1.1);
-}
 
 .social-links {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 1rem;
+  padding: 0 .15rem;
+  gap: 1.2rem;
   align-items: center;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: all 0.4s ease;
+  overflow: hidden;
 }
 
 .social-links.visible {
   opacity: 1;
+  max-width: 150px;
   transform: translateX(0);
 }
 
 .social-links.hidden {
   opacity: 0;
-  transform: translateX(20px);
-  position: absolute;
+  max-width: 0;
+  margin: 0;
+  pointer-events: none;
+  transform: translateX(-10px);
 }
 
 .social-link {
   color: white;
-  text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-link:hover {
-  color: #3498db;
+  color: var(--accent-color);
   transform: scale(1.1);
 }
 
@@ -191,78 +229,41 @@
   background: none;
   border: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   cursor: pointer;
   z-index: 1001;
-  outline: none                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+  padding: 0.5rem;
 }
 
-@media (max-width: 1140px){
-  .social-links.visible {
-    display: none;
-    background-color: yellow;
-  }
-
+@media (max-width: 1140px) {
   .header-container {
-    gap: 1.5em;
+    gap: 1rem;
   }
 }
-@media (max-width: 1024px) {
-  .header-container {
-    padding: 0 1.5rem;
-    gap: 1.5rem;
-  }
-
-  .logo-text {
-    font-size: 1.8rem;
-  }
-
-  .header-scrolled .logo-text {
-    font-size: 1.5rem;
-  }
-
-  .nav-list {
-    gap: 1.5rem;
-  }
-
-  .header-scrolled .nav-list a {
-    font-size: 0.9rem;
-  }
-
-
-  .header-scrolled .search-input {
-    width: 160px;
-  }
-}
-
-
 
 @media (max-width: 772px) {
   .menu-toggle {
     display: block;
   }
 
-  .header-container {
-    padding: 0 1.5rem;
-    gap: 1rem;
-  }
-
-  /* Transforma a NAV em um menu suspenso */
   .nav {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background: #0247AE;
-    padding: 2rem;
-    display: none; /* Esconde por padrão */
+    background: var(--primary-color);
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
     flex-direction: column;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease-in-out;
   }
 
   .nav-open {
-    display: flex; 
-    animation: slideDown 0.3s ease-out;
+    max-height: 400px;
+    padding: 2rem 0;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .nav-list {
@@ -270,13 +271,10 @@
     align-items: center;
     gap: 1.5rem;
   }
-
-  .social-links.hidden {
-    display: none;
+  .search-input {
+    width: 140px;
   }
-}
-
-@keyframes slideDown {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  .search-input:focus {
+    width: 160px;
+  }
 }
