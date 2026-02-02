@@ -63,6 +63,11 @@
   margin-bottom: 10px;
 }
 
+.service-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .service-btn {
   display: inline-flex; 
   align-items: center;   
