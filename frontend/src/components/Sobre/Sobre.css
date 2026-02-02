@@ -27,14 +27,14 @@
 
 .about-text h3 {
   color: #3B82F6;
-  margin-top: 25px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .about-text p {
   line-height: 1.7;
   color: #555;
   margin-top: 10px;
+  font-size: 1.2rem;
 }
 
 /* Lado Direito: Grid de Destaques */
