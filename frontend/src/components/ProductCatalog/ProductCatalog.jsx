@@ -13,14 +13,14 @@ export default function ProductCatalog() {
       setLoading(true)
       setError(null)
       try {
-        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
-        const res = await fetch(`${API_URL}/produtos/`);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`)
+        const res = await fetch('/produtos.json');
+        
+        if (!res.ok) throw new Error('Erro ao carregar o arquivo de produtos')
         const data = await res.json()
         setProducts(data)
       } catch (err) {
         console.error('Failed to load products', err)
-        setError('Não foi possível carregar os produtos')
+        setError('Não foi possível carregar o catálogo de produtos')
       } finally {
         setLoading(false)
       }
@@ -29,13 +29,17 @@ export default function ProductCatalog() {
     fetchProducts()
   }, [])
 
+  // Extrai categorias únicas do JSON
   const categories = [
     { id: 'todos', name: 'Todos os Produtos' },
-    ...Array.from(new Set(products.map(p => p.categoria).filter(Boolean))).map(c => ({ id: c, name: c.charAt(0).toUpperCase() + c.slice(1) }))
+    ...Array.from(new Set(products.map(p => p.categoria).filter(Boolean))).map(c => ({ 
+      id: c, 
+      name: c 
+    }))
   ]
 
-  const filteredProducts = selectedCategory === 'todos' 
-    ? products 
+  const filteredProducts = selectedCategory === 'todos'
+    ? products
     : products.filter(p => p.categoria === selectedCategory)
 
   if (loading) return (
@@ -43,11 +47,12 @@ export default function ProductCatalog() {
       <div className="catalog-container">
         <div className="loading-container">
           <div className="spinner"></div>
-          <p>Carregando produtos...</p>
+          <p>Carregando catálogo...</p>
         </div>
       </div>
     </main>
   )
+
   if (error) return (
     <main className="catalog" id="catalogo">
       <div className="catalog-container">
@@ -62,6 +67,7 @@ export default function ProductCatalog() {
     <main className="catalog" id="catalogo">
       <div className="catalog-container">
         <h2 className="section-title">Nosso Catálogo</h2>
+        
         <section className="filters">
           <h3>Filtrar por Categoria</h3>
           <div className="category-filters">
@@ -79,9 +85,9 @@ export default function ProductCatalog() {
 
         <section className="products-section">
           <h3 className="products-title">
-            {selectedCategory === 'todos' 
-              ? 'Todos os Produtos:' 
-              : `Categoria: ${categories.find(c => c.id === selectedCategory)?.name}`}
+            {selectedCategory === 'todos'
+              ? 'Todos os Produtos:'
+              : `Categoria: ${selectedCategory}`}
           </h3>
           <div className="products-grid">
             {filteredProducts.map(product => (

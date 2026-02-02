@@ -4,7 +4,7 @@ import './Header.css'
 export default function Header() {
   const [searchTerm, setSearchTerm] = useState('')
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isMenuOpen, setIsMenuOpen] = useState(false) // Novo estado para o menu mobile
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [products, setProducts] = useState([])
   const [filteredProducts, setFilteredProducts] = useState([])
 
@@ -16,15 +16,17 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Ajuste na URL para produção (Vercel) se necessário
   useEffect(() => {
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
-    fetch(`${API_URL}/produtos`)
-      .then(res => res.json())
+    fetch('/produtos.json')
+      .then(res => {
+        if (!res.ok) throw new Error('Erro ao carregar produtos')
+        return res.json()
+      })
       .then(data => setProducts(data))
-      .catch(err => console.error('Error fetching products:', err))
+      .catch(err => console.error('Erro ao carregar catálogo para busca:', err))
   }, [])
 
+  // LÓGICA DE PESQUISA
   useEffect(() => {
     if (searchTerm.trim() === '') {
       setFilteredProducts([])
@@ -43,9 +45,6 @@ export default function Header() {
           <h1 className="logo-text">FOURINOX</h1>
         </div>
 
-        
-
-        {/* Menu de Navegação - Adicionada classe dinâmica */}
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <ul className="nav-list">
             <li><a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a></li>
@@ -67,7 +66,14 @@ export default function Header() {
           {filteredProducts.length > 0 && (
             <div className="search-dropdown">
               {filteredProducts.map(product => (
-                <div key={product.id} className="search-item" onClick={() => setSearchTerm(product.nome)}>
+                <div 
+                  key={product.id} 
+                  className="search-item" 
+                  onClick={() => {
+                    setSearchTerm('') 
+                    window.location.href = `#catalogo` 
+                  }}
+                >
                   <span>{product.nome}</span>
                 </div>
               ))}
