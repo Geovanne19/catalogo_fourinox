@@ -111,6 +111,11 @@
   margin: 0.1rem 0 0 0;
   line-height: 1.4;
   flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {

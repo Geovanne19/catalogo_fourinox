@@ -29,7 +29,32 @@ const Servicos = () => {
                   </button>
                 </div>
               </div>
-            </div>              
+            </div>
+
+            <div className="service-card-modern">
+              <div className="service-image-box">
+                <img src="/img-corrimao-inox.webp" alt="Corrimão e Guarda-Corpo em Inox" />
+              </div>
+              
+              <div className="service-content">
+                <div className="service-header-row">
+                  <i className="fas fa-shield-halved service-icon"></i>
+                  <h3>Corrimão e Guarda-Corpo</h3>
+                </div>
+                
+                <p>
+                  Fabricação e montagem personalizada de sistemas de segurança em aço inox. 
+                  Unimos engenharia de precisão e acabamento de alto padrão para projetos 
+                  residenciais, comerciais e industriais.
+                </p>
+                
+                <div className="service-footer">
+                  <button className="service-btn">
+                    Saiba mais <i className="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>               
         </div>
     </section>
   );

@@ -8,7 +8,8 @@ export default function Footer() {
         <div className="footer-group">
           <div className="footer-section">
             <h4>FOURINOX</h4>
-            <p>Qualidade e precisão em aço inox para o seu projeto.</p>
+            <p>Inovação, Qualidade, Durabilidade e Sustentabilidade.</p>
+            <p>CNPJ: 50.178.392/0001-51</p>
           </div>
 
           <div className="footer-section">
@@ -35,10 +36,11 @@ export default function Footer() {
                 className="footer-link-map"
               >
                 <i className="fas fa-map-marker-alt"></i> Av. Goiás Norte, Qd. 04 - Lt. 50, Res. Recanto do Bosque, Goiânia - GO
+                CEP: 74.474.310
               </a>
             </p>
-            <p><i className="fab fa-whatsapp"></i> (62) 99999-9999</p>
-            <p><i className="far fa-envelope"></i> contato@fourinox.com.br</p>
+            <p><i className="fab fa-whatsapp"></i>(62) 8246-3639</p>
+            <p><i className="far fa-envelope"></i>leonardo.fourinox@gmail.com</p>
           </div>
 
           <div className="footer-section">
@@ -53,7 +55,7 @@ export default function Footer() {
       </div>
       
       <div className="footer-bottom">
-        <p>© 2026 Fourinox - Todos os direitos reservados.</p>
+        <p>© 2026 Fourinox - Todos os direitos reservados. (Lei 9610 de 19/02/1998)</p>
       </div>
     </footer>
   )
