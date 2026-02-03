@@ -11,7 +11,7 @@
     "nome": "Tubos Industriais",
     "categoria": "Aço Carbono",
     "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "tubos-industriais.jpeg"
+    "imagem": "tubos-industriais.jpg"
   },
   {
     "id": 3,
@@ -78,10 +78,10 @@
   },
   {
     "id": 12,
-    "nome": "Válvulas - Aço Inox",
+    "nome": "Válvulas",
     "categoria": "Aço Inox",
     "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "válvulas---aço-inox.jpg"
+    "imagem": "válvulas.jpg"
   },
   {
     "id": 13,
@@ -117,5 +117,61 @@
     "categoria": "Aço Inox",
     "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
     "imagem": "chapas-bobinas.jpg"
+  },
+  {
+    "id": 18,
+    "nome": "Tubulações Schedules",
+    "categoria": "Aço Inox",
+    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
+    "imagem": "tubulações-schedules.jpg"
+  },
+  {
+    "id": 19,
+    "nome": "Tubos Calandrados",
+    "categoria": "Aço Inox",
+    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
+    "imagem": "tubos-calandrados.jpg"
+  },
+  {
+    "id": 20,
+    "nome": "Vigas H",
+    "categoria": "Aço Inox",
+    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
+    "imagem": "vigas-h.jpg"
+  },
+  {
+    "id": 21,
+    "nome": "Vigas I",
+    "categoria": "Aço Inox",
+    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
+    "imagem": "vigas-i.jpg"
+  },
+  {
+    "id": 22,
+    "nome": "Tela Expandida",
+    "categoria": "Aço Inox",
+    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
+    "imagem": "tela-expandida.jpg"
+  },
+  {
+    "id": 23,
+    "nome": "Chapa Perfurada",
+    "categoria": "Aço Inox",
+    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
+    "imagem": "chapa-perfurada.jpg"
+  },
+  {
+    "id": 24,
+    "nome": "Tubos Mecânicos",
+    "categoria": "Aço Inox",
+    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
+    "imagem": "tubos-mecânicos.jpg"
+  },
+  {
+    "id": 25,
+    "nome": "Conexões de Aço Padrão OD Sanitário",
+    "categoria": "Aço Inox",
+    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
+    "imagem": "conexões-de-aço-padrão-od-sanitário.jpg"
   }
 ]

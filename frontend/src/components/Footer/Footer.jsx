@@ -5,39 +5,40 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section">
-          <h4>Sobre a FOURINOX</h4>
-          <p>Especialistas em aço inox de alta performance para projetos industriais, comerciais e residenciais.</p>
+          <h4>FOURINOX</h4>
+          <p>Qualidade e precisão em aço inox para o seu projeto.</p>
         </div>
 
         <div className="footer-section">
-          <h4>Links Úteis</h4>
+          <h4>Links Rápidos</h4>
           <ul>
-            <li><a href="#sobre">Nossa História</a></li>
-            <li><a href="#catalogo">Catálogo de Produtos</a></li>
-            <li><a href="#servicos">Serviços Técnicos</a></li>
-
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </div>
 
         <div className="footer-section">
           <h4>Contato</h4>
-          <p><i className="fas fa-envelope"></i> contato@fourinox.com.br</p>
-          <p><i className="fas fa-phone"></i> (11) 3000-0000</p>
-          <p><i className="fas fa-map-marker-alt"></i> São Paulo, SP</p>
-        </div>
-
-        <div className="footer-section">
-          <h4>Redes Sociais</h4>
-          <div className="social-links-footer">
-            <a href="#whatsapp" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
-            <a href="#instagram" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-            <a href="#facebook" aria-label="Facebook"><i className="fab fa-facebook"></i></a>
-          </div>
+          <p>
+            <a 
+              href="https://maps.google.com/?cid=8313203465533308798&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ3" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="footer-link-map"
+            >
+              <i className="fas fa-map-marker-alt"></i> Av. Goiás Norte, Qd. 04 - Lt. 50, Res. Recanto do Bosque, Goiânia - GO
+            </a>
+          </p>
+          <p><i className="fab fa-whatsapp"></i> (62) 99999-9999</p>
+          <p><i className="far fa-envelope"></i> contato@fourinox.com.br</p>
         </div>
       </div>
-
+      
       <div className="footer-bottom">
-        <p>&copy; 2026 FOURINOX. Todos os direitos reservados.</p>
+        <p>© 2026 Fourinox - Todos os direitos reservados.</p>
       </div>
     </footer>
   )
