@@ -81,7 +81,7 @@ export default function ProductPage() {
                 <h1 className="detail-title">{product.nome}</h1>
                 
                 <div className="detail-description">
-                  <h3>Descrição Técnica</h3>
+                  <h3>Descrição:</h3>
                   <p>{product.descricao}</p>
                 </div>
             </div>
