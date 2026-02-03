@@ -36,9 +36,9 @@ export default function Footer() {
                 className="footer-link-map"
               >
                 <i className="fas fa-map-marker-alt"></i> Av. Goiás Norte, Qd. 04 - Lt. 50, Res. Recanto do Bosque, Goiânia - GO
-                CEP: 74.474.310
               </a>
             </p>
+            <p><p>CEP: 74.474.310</p></p>
             <p><i className="fab fa-whatsapp"></i>(62) 8246-3639</p>
             <p><i className="far fa-envelope"></i>leonardo.fourinox@gmail.com</p>
           </div>
@@ -46,9 +46,9 @@ export default function Footer() {
           <div className="footer-section">
             <h4>Redes Sociais</h4>
             <div className="social-links-footer">
-              <a href="#" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
-              <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-              <a href="#" aria-label="Facebook"><i className="fab fa-facebook"></i></a>
+              <a href="https://wa.me/556282463639" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/fourinox/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=leonardo.fourinox@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i className="fas fa-envelope"></i></a>
             </div>
           </div>
         </div>

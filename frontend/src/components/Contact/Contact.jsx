@@ -36,7 +36,7 @@ const Contact = () => {
               </div>
             </a>
 
-            <a href="mailto:leonardo.fourinox@gmail.com" className="contact-item email">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=leonardo.fourinox@gmail.com" target="_blank" rel="noopener noreferrer" className="contact-item email">
               <div className="icon-circle">
                 <i className="fas fa-envelope"></i>
               </div>

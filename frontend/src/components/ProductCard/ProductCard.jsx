@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom'
 import './ProductCard.css'
 
 export default function ProductCard({ product }) {
   const imageUrl = `/imagens-produtos/${product.imagem}`;
 
   return (
-    <div className="product-card">
+    <Link to={`/produto/${product.id}`} className="product-card">
       <div className="product-image-container">
         <span className="product-category-tag">{product.categoria}</span>
 
@@ -30,6 +31,6 @@ export default function ProductCard({ product }) {
         </div>
         <p className="product-description">{product.descricao}</p>
       </div>
-    </div>
+    </Link>
   )
 }

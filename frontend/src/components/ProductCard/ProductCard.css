@@ -9,6 +9,8 @@
   height: 100%;
   animation: fadeInUp .5s ease-out;
   cursor: pointer;
+  text-decoration: none; 
+  color: inherit;        
 }
 
 .product-card:nth-child(1) { animation-delay: 0s; }
