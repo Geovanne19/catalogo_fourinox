@@ -5,6 +5,10 @@
   padding: 1.5rem 0 1rem 0;
 }
 
+.footer-group {
+  display: contents; 
+}
+
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -95,20 +99,43 @@ ul.footer-links {
   color: #95a5a6;
 }
 
-/* Responsividade Mobile */
+/* Responsividade Mobile (Ajuste Solicitado) */
 @media (max-width: 768px) {
   .footer-container {
-    grid-template-columns: 1fr; /* Uma única coluna */
-    text-align: center; /* Centraliza tudo no mobile */
+    /* Muda para 2 colunas lado a lado no mobile */
+    grid-template-columns: 1fr 1fr; 
+    text-align: center;
     gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .footer-group {
+    /* No mobile, o grupo vira uma coluna flexível */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .footer-section h4::after {
     left: 50%;
-    transform: translateX(-50%); /* Centraliza a linha decorativa */
+    transform: translateX(-50%);
   }
 
   .social-links-footer {
-    justify-content: center; /* Centraliza ícones sociais */
+    justify-content: center;
+  }
+
+  /* Ajuste para endereços não quebrarem a largura da coluna */
+  .footer-link-map {
+    font-size: 0.75rem;
+    display: block;
+    line-height: 1.2;
+  }
+}
+
+/* Para telas muito pequenas, pode-se opcionalmente voltar para 1 coluna */
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
   }
 }

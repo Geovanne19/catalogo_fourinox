@@ -1,177 +1,177 @@
 [
   {
     "id": 1,
-    "nome": "Tubos de Condução",
-    "categoria": "Aço Carbono",
-    "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "tubos-de-condução.jpg"
+    "nome": "Abrasivos",
+    "categoria": "Aço Inox",
+    "descricao": "Discos e materiais consumíveis de alta performance desenvolvidos para processos de corte, desbaste e acabamento refinado em superfícies de aço inoxidável.",
+    "imagem": "abrasivos.jpg"
   },
   {
     "id": 2,
-    "nome": "Tubos Industriais",
-    "categoria": "Aço Carbono",
-    "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "tubos-industriais.jpg"
+    "nome": "Acessórios para Corrimão",
+    "categoria": "Aço Inox",
+    "descricao": "Componentes modulares e decorativos em inox que garantem segurança, suporte estrutural e um acabamento estético superior para sistemas de corrimão e guarda-corpos.",
+    "imagem": "acessórios-para-corrimão.jpg"
   },
   {
     "id": 3,
-    "nome": "Conexões Tubulares",
-    "categoria": "Aço Carbono",
-    "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "conexões-tubulares.jpg"
+    "nome": "Barras e Perfis",
+    "categoria": "Aço Inox",
+    "descricao": "Barras chatas, redondas e perfis estruturais em aço inox que oferecem excelente resistência à corrosão e versatilidade para projetos arquitetônicos e industriais.",
+    "imagem": "barras-e-perfis.jpg"
   },
   {
     "id": 4,
-    "nome": "Conexões Galvanizadas",
-    "categoria": "Aço Carbono",
-    "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "conexões-galvanizadas.jpg"
+    "nome": "Chapa Perfurada",
+    "categoria": "Aço Inox",
+    "descricao": "Laminas de aço inox com perfurações precisas, ideais para filtragem industrial, ventilação de equipamentos e elementos de design decorativo com alta durabilidade.",
+    "imagem": "chapa-perfurada.jpg"
   },
   {
     "id": 5,
-    "nome": "Válvulas",
-    "categoria": "Aço Carbono",
-    "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "válvulas.jpg"
+    "nome": "Chapas/Bobinas",
+    "categoria": "Aço Inox",
+    "descricao": "Chapas laminadas e bobinas de aço inoxidável disponíveis em diversas espessuras e acabamentos, essenciais para a fabricação de tanques, móveis e revestimentos.",
+    "imagem": "chapas-bobinas.jpg"
   },
   {
     "id": 6,
-    "nome": "Equipamentos de combate a incêndio",
-    "categoria": "Aço Carbono",
-    "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "equipamentos-de-combate-a-incêndio.jpg"
+    "nome": "Conexões de Aço Padrão OD Sanitário",
+    "categoria": "Aço Inox",
+    "descricao": "Conexões polidas internamente seguindo rigorosos padrões sanitários, projetadas para indústrias alimentícias e farmacêuticas que exigem máxima higiene e pureza.",
+    "imagem": "conexões-de-aço-padrão-od-sanitário.jpg"
   },
   {
     "id": 7,
-    "nome": "Chapas",
-    "categoria": "Aço Carbono",
-    "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "chapas.jpg"
+    "nome": "Tela Expandida",
+    "categoria": "Aço Inox",
+    "descricao": "Superfícies rígidas e antiderrapantes produzidas a partir de chapas de inox expandidas, muito utilizadas em grelhas, plataformas e elementos de proteção industrial.",
+    "imagem": "tela-expandida.jpg"
   },
   {
     "id": 8,
-    "nome": "Barras/Perfis",
-    "categoria": "Aço Carbono",
-    "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "barras-perfis.jpg"
+    "nome": "Tubos Calandrados",
+    "categoria": "Aço Inox",
+    "descricao": "Tubulações de grandes diâmetros fabricadas via calandragem, oferecendo precisão dimensional e resistência para sistemas de exaustão e condução de fluidos.",
+    "imagem": "tubos-calandrados.jpg"
   },
   {
     "id": 9,
-    "nome": "Acessórios Industriais",
-    "categoria": "Aço Carbono",
-    "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "acessórios-industriais.jpg"
+    "nome": "Tubos com costura e sem costura",
+    "categoria": "Aço Inox",
+    "descricao": "Tubos em inox versáteis para diferentes pressões e aplicações, garantindo estanqueidade e longevidade em redes hidráulicas e estruturas metálicas.",
+    "imagem": "tubos-com-costura-e-sem-costura.jpg"
   },
   {
     "id": 10,
-    "nome": "Conexões Grooved",
-    "categoria": "Aço Carbono",
-    "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "conexões-grooved.jpg"
+    "nome": "Tubos Mecânicos",
+    "categoria": "Aço Inox",
+    "descricao": "Tubos de parede grossa destinados à usinagem e fabricação de peças mecânicas que exigem alta resistência mecânica e propriedades anticorrosivas.",
+    "imagem": "tubos-mecânicos.jpg"
   },
   {
     "id": 11,
-    "nome": "Isolamento térmico",
-    "categoria": "Aço Carbono",
-    "descricao": "Produto em aço carbono de alta resistência para aplicações industriais.",
-    "imagem": "isolamento-térmico.jpg"
+    "nome": "Tubulações Schedules",
+    "categoria": "Aço Inox",
+    "descricao": "Tubos de condução de alta pressão fabricados sob a norma Schedule, indicados para ambientes químicos severos e sistemas de transporte de gases agressivos.",
+    "imagem": "tubulações-schedules.jpg"
   },
   {
     "id": 12,
     "nome": "Válvulas",
     "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
+    "descricao": "Dispositivos de controle de fluxo em aço inoxidável que proporcionam vedação hermética e resistência superior ao desgaste químico em linhas de produção.",
     "imagem": "válvulas.jpg"
   },
   {
     "id": 13,
-    "nome": "Barras e Perfis",
-    "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "barras-e-perfis.jpg"
-  },
-  {
-    "id": 14,
-    "nome": "Acessórios para Corrimão",
-    "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "acessórios-para-corrimão.jpg"
-  },
-  {
-    "id": 15,
-    "nome": "Abrasivos",
-    "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "abrasivos.jpg"
-  },
-  {
-    "id": 16,
-    "nome": "Tubos com costura e sem costura",
-    "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "tubos-com-costura-e-sem-costura.jpg"
-  },
-  {
-    "id": 17,
-    "nome": "Chapas/Bobinas",
-    "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "chapas-bobinas.jpg"
-  },
-  {
-    "id": 18,
-    "nome": "Tubulações Schedules",
-    "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "tubulações-schedules.jpg"
-  },
-  {
-    "id": 19,
-    "nome": "Tubos Calandrados",
-    "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "tubos-calandrados.jpg"
-  },
-  {
-    "id": 20,
     "nome": "Vigas H",
     "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
+    "descricao": "Elementos estruturais robustos em formato de H, ideais para suportar grandes cargas em construções civis e projetos industriais que utilizam aço inox.",
     "imagem": "vigas-h.jpg"
   },
   {
-    "id": 21,
+    "id": 14,
     "nome": "Vigas I",
     "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
+    "descricao": "Vigas estruturais de perfil I projetadas para otimizar a relação entre peso e resistência em estruturas metálicas de médio e grande porte.",
     "imagem": "vigas-i.jpg"
   },
   {
+    "id": 15,
+    "nome": "Acessórios Industriais",
+    "categoria": "Aço Carbono",
+    "descricao": "Conjunto de componentes auxiliares em aço carbono de alta durabilidade para suporte e montagem de redes de tubulações industriais.",
+    "imagem": "acessórios-industriais.jpg"
+  },
+  {
+    "id": 16,
+    "nome": "Barras/Perfis",
+    "categoria": "Aço Carbono",
+    "descricao": "Perfis e barras estruturais em aço carbono, amplamente utilizados na serralheria e construção de galpões por seu excelente custo-benefício e resistência.",
+    "imagem": "barras-perfis.jpg"
+  },
+  {
+    "id": 17,
+    "nome": "Chapas",
+    "categoria": "Aço Carbono",
+    "descricao": "Chapas de aço carbono grossas ou finas, ideais para a indústria de base e projetos de engenharia que demandam materiais robustos e de fácil soldagem.",
+    "imagem": "chapas.jpg"
+  },
+  {
+    "id": 18,
+    "nome": "Conexões Galvanizadas",
+    "categoria": "Aço Carbono",
+    "descricao": "Conexões em aço carbono com banho de zinco para proteção contra oxidação, ideais para redes de água fria e combate a incêndio.",
+    "imagem": "conexões-galvanizadas.jpg"
+  },
+  {
+    "id": 19,
+    "nome": "Conexões Grooved",
+    "categoria": "Aço Carbono",
+    "descricao": "Sistema de conexões ranhuradas que permitem uma montagem rápida e segura de tubulações sem a necessidade de soldagem, reduzindo o tempo de instalação.",
+    "imagem": "conexões-grooved.jpg"
+  },
+  {
+    "id": 20,
+    "nome": "Conexões Tubulares",
+    "categoria": "Aço Carbono",
+    "descricao": "Conexões soldáveis de aço carbono utilizadas para redirecionar fluxos em sistemas de tubulação industrial com segurança e confiabilidade técnica.",
+    "imagem": "conexões-tubulares.jpg"
+  },
+  {
+    "id": 21,
+    "nome": "Equipamentos de combate a incêndio",
+    "categoria": "Aço Carbono",
+    "descricao": "Linha completa de hidrantes, abrigos e tubulações certificadas para sistemas de prevenção e proteção contra incêndio em edifícios e indústrias.",
+    "imagem": "equipamentos-de-combate-a-incêndio.jpg"
+  },
+  {
     "id": 22,
-    "nome": "Tela Expandida",
-    "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "tela-expandida.jpg"
+    "nome": "Isolamento térmico",
+    "categoria": "Aço Carbono",
+    "descricao": "Soluções de revestimento para tubulações de aço carbono que minimizam perdas de calor e garantem a eficiência energética de processos térmicos.",
+    "imagem": "isolamento-térmico.jpg"
   },
   {
     "id": 23,
-    "nome": "Chapa Perfurada",
-    "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "chapa-perfurada.jpg"
+    "nome": "Tubos de Condução",
+    "categoria": "Aço Carbono",
+    "descricao": "Tubos projetados para o transporte eficiente de fluidos líquidos e gasosos em condições operacionais padrão de pressão e temperatura.",
+    "imagem": "tubos-de-condução.jpg"
   },
   {
     "id": 24,
-    "nome": "Tubos Mecânicos",
-    "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "tubos-mecânicos.jpg"
+    "nome": "Tubos Industriais",
+    "categoria": "Aço Carbono",
+    "descricao": "Tubos estruturais de aço carbono com geometrias variadas, fundamentais para a indústria moveleira, implementos agrícolas e estruturas diversas.",
+    "imagem": "tubos-industriais.jpg"
   },
   {
     "id": 25,
-    "nome": "Conexões de Aço Padrão OD Sanitário",
-    "categoria": "Aço Inox",
-    "descricao": "Produto de alta qualidade em aço inoxidável para aplicações industriais e residenciais.",
-    "imagem": "conexões-de-aço-padrão-od-sanitário.jpg"
+    "nome": "Válvulas",
+    "categoria": "Aço Carbono",
+    "descricao": "Componentes de bloqueio e controle de fluxo em aço carbono, construídos para suportar regimes de trabalho contínuo em plantas industriais.",
+    "imagem": "válvulas.jpg"
   }
 ]
