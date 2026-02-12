@@ -24,16 +24,16 @@ const Servicos = () => {
                 </p>
                 
                 <div className="service-footer">
-                  <button className="service-btn">
+                  <a href="https://wa.me/message/JX3T3UILQ4YJN1" target="_blank" className="service-btn">
                     Saiba mais <i className="fas fa-arrow-right"></i>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div className="service-card-modern">
               <div className="service-image-box">
-                <img src="/img-corrimao-inox.webp" alt="Corrimão e Guarda-Corpo em Inox" />
+                <img src="/img-montagem-corrimao.png" alt="Corrimão e Guarda-Corpo em Inox" />
               </div>
               
               <div className="service-content">
@@ -49,9 +49,9 @@ const Servicos = () => {
                 </p>
                 
                 <div className="service-footer">
-                  <button className="service-btn">
+                  <a href="https://wa.me/message/JX3T3UILQ4YJN1" target="_blank" className="service-btn">
                     Saiba mais <i className="fas fa-arrow-right"></i>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>               
