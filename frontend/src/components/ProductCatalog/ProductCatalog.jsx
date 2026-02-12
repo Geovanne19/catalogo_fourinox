@@ -43,7 +43,7 @@ export default function ProductCatalog() {
     : products.filter(p => p.categoria === selectedCategory)
 
   if (loading) return (
-    <main className="catalog" id="catalogo">
+    <main className="catalog">
       <div className="catalog-container">
         <div className="loading-container">
           <div className="spinner"></div>

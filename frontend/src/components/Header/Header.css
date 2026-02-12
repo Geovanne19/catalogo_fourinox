@@ -75,17 +75,6 @@
   padding: 5px 0;
 }
 
-.nav-list a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease, font-size 0.4s ease;
-  position: relative; /* Necessário para o posicionamento da linha */
-  white-space: nowrap;
-  padding: 5px 0;
-}
-
-/* Cria a linha invisível embaixo do link */
 .nav-list a::after {
   content: '';
   position: absolute;

@@ -2,7 +2,7 @@ import './Sobre.css'
 
 export default function Sobre() {
   return (
-    <section id="sobre" className="about">
+    <section className="about">
       <div className="about-container">       
         <div className="about-content">
           <div className="about-text">

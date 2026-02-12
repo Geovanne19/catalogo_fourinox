@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { Link, useNavigate } from 'react-router-dom' 
 import './Header.css'
 
 export default function Header() {
@@ -9,6 +10,7 @@ export default function Header() {
   const [filteredProducts, setFilteredProducts] = useState([])
   
   const searchRef = useRef(null)
+  const navigate = useNavigate() 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,20 +52,24 @@ export default function Header() {
     }
   }, [searchTerm, products])
 
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <header className={`header ${isScrolled ? 'header-scrolled' : 'header-top'}`}>
       <div className="header-container">
         <div className="logo-section">
-          <img src="./logo.png" alt="Logo Fourinox" />
+          <Link to="/">
+            <img src="./logo.png" alt="Logo Fourinox" />
+          </Link>
         </div>
 
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <ul className="nav-list">
-            <li><a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a></li>
-            <li><a href="#sobre" onClick={() => setIsMenuOpen(false)}>Sobre Nós</a></li>
-            <li><a href="#catalogo" onClick={() => setIsMenuOpen(false)}>Catálogo</a></li>
-            <li><a href="#servicos" onClick={() => setIsMenuOpen(false)}>Serviços</a></li>
-            <li><a href="#contato" onClick={() => setIsMenuOpen(false)}>Contato</a></li>
+            <li><Link to="/#home" onClick={closeMenu}>Home</Link></li>
+            <li><Link to="/#sobre" onClick={closeMenu}>Sobre Nós</Link></li>
+            <li><Link to="/#catalogo" onClick={closeMenu}>Catálogo</Link></li>
+            <li><Link to="/#servicos" onClick={closeMenu}>Serviços</Link></li>
+            <li><Link to="/#contato" onClick={closeMenu}>Contato</Link></li>
           </ul>
         </nav>
 
@@ -85,7 +91,7 @@ export default function Header() {
                   onClick={() => {
                     setSearchTerm('') 
                     setFilteredProducts([])
-                    window.location.href = `#catalogo` 
+                    navigate(`/produto/${product.id}`) 
                   }}
                 >
                   <img 
