@@ -40,7 +40,7 @@ export default function Footer() {
             </p>
             <p><p>CEP: 74.474.310</p></p>
             <p><i className="fab fa-whatsapp"></i>(62) 8246-3639</p>
-            <p><i className="far fa-envelope"></i>leonardo.fourinox@gmail.com</p>
+            <p><i className="far fa-envelope"></i>fourinox.ind@gmail.com</p>
           </div>
 
           <div className="footer-section">
@@ -48,7 +48,7 @@ export default function Footer() {
             <div className="social-links-footer">
               <a href="https://wa.me/556282463639" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
               <a href="https://www.instagram.com/fourinox/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=leonardo.fourinox@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i className="fas fa-envelope"></i></a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fourinox.ind@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i className="fas fa-envelope"></i></a>
             </div>
           </div>
         </div>

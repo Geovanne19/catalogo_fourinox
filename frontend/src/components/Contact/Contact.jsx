@@ -1,6 +1,10 @@
 import './Contact.css';
 
 const Contact = () => {
+  const emailLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=fourinox.ind@gmail.com'
+  const coordenadas = '-16.607028,-49.306583'
+  const mapaLink = `https://www.google.com/maps?q=${coordenadas}&z=17&output=embed`
+
   return (
     <section className="contact-section">
       <div className="contact-container">
@@ -36,13 +40,13 @@ const Contact = () => {
               </div>
             </a>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=leonardo.fourinox@gmail.com" target="_blank" rel="noopener noreferrer" className="contact-item email">
+            <a href={emailLink} target="_blank" rel="noopener noreferrer" className="contact-item email" aria-label="Abrir cliente de e-mail">
               <div className="icon-circle">
                 <i className="fas fa-envelope"></i>
               </div>
               <div className="contact-text">
                 <h3>E-mail</h3>
-                <p>leonardo.fourinox@gmail.com</p>
+                <p>Clique para enviar mensagem</p>
               </div>
               <div className="external-link-icon">
                 <i className="fas fa-external-link-alt"></i>
@@ -55,7 +59,7 @@ const Contact = () => {
           <div className="contact-map-wrapper">
             <iframe 
               title="Localização Fourinox"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.5135245814524!2d-49.31909862386266!3d-16.602383984153034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef686f6689ab7%3A0x735e6e81b4a8bf7e!2sFour%20Inox!5e0!3m2!1spt-BR!2sbr!4v1706893000000!5m2!1spt-BR!2sbr" 
+              src={mapaLink}
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -63,6 +67,7 @@ const Contact = () => {
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade">
             </iframe>
+            <p className="map-caption">Av. Goiás Norte, Quadra 24 - Lote 25, Res. Recanto do Bosque, Goiânia-GO</p>
           </div>
         </div>
       </div>

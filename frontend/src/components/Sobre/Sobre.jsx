@@ -20,8 +20,8 @@ export default function Sobre() {
           <div className="about-highlights">
             {/* Card 1: Foco em Confiança */}
             <div className="highlight-card">
-              {/* Mantive as classes de cor originais (ex: icon-tech) para não quebrar seu CSS */}
-              <div className="highlight-icon icon-tech">
+              {/* Mantive as classes de cor originais (ex:) para não quebrar seu CSS */}
+              <div className="highlight-icon">
                 <i className="fas fa-handshake"></i> {/* Ícone de aperto de mão */}
               </div>
               <h4>Relações de Confiança</h4>
@@ -30,7 +30,7 @@ export default function Sobre() {
 
             {/* Card 2: Foco no Cliente */}
             <div className="highlight-card">
-              <div className="highlight-icon icon-design">
+              <div className="highlight-icon">
                 <i className="fas fa-user-check"></i> {/* Ícone de atendimento/cliente */}
               </div>
               <h4>Dedicação ao Cliente</h4>
@@ -39,7 +39,7 @@ export default function Sobre() {
 
             {/* Card 3: Pilares Qualidade/Durabilidade */}
             <div className="highlight-card">
-              <div className="highlight-icon icon-quality">
+              <div className="highlight-icon">
                 <i className="fas fa-shield-halved"></i> {/* Ícone de escudo mantido */}
               </div>
               <h4>Qualidade e Durabilidade</h4>
@@ -48,7 +48,7 @@ export default function Sobre() {
 
             {/* Card 4: Pilares Inovação/Sustentabilidade */}
             <div className="highlight-card">
-              <div className="highlight-icon icon-speed">
+              <div className="highlight-icon">
                 <i className="fas fa-leaf"></i> {/* Ícone de folha para sustentabilidade */}
               </div>
               <h4>Inovação Sustentável</h4>
