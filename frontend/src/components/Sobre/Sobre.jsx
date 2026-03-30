@@ -10,9 +10,12 @@ export default function Sobre() {
             <h3>Nossa Essência</h3>
             <p>
               A Four Inox nasceu do desejo de dois vendedores em oferecer um atendimento diferenciado, 
-              com uma política transparente e baseada na construção de relações de confiança. Nosso objetivo 
-              vai além de simplesmente fornecer materiais: buscamos atender cada cliente com dedicação, estima e respeito, 
-              priorizando suas necessidades e expectativas. Nossa empresa é sustentada por quatro pilares 
+              com uma política transparente e baseada na construção de relações de confiança. 
+            </p>
+            <p>Nosso objetivo vai além de simplesmente fornecer materiais: buscamos atender cada cliente com dedicação, estima e respeito, priorizando suas necessidades e expectativas. 
+            </p>
+            <p>
+              Nossa empresa é sustentada por quatro pilares 
               fundamentais: <strong>inovação, qualidade, durabilidade e sustentabilidade.</strong>
             </p>
           </div>
